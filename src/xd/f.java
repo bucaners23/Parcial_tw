@@ -14,8 +14,8 @@ import java.awt.event.KeyEvent;
 public class f {
 
 	private JFrame frmIdiomaF;
-	private JTextArea textArea;
-	private JTextArea textArea_1;
+	private JTextArea txtArea;
+	private JTextArea txtTra;
 
 	/**
 	 * Launch the application.
@@ -53,17 +53,13 @@ public class f {
 		frmIdiomaF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmIdiomaF.getContentPane().setLayout(null);
 		
-		textArea = new JTextArea();
-		textArea.addKeyListener(new KeyAdapter() {
-			@Override
-			public void keyTyped(KeyEvent e) {
-				textArea_1.setText(textArea.getText());
-				
-			}
+		txtArea = new JTextArea();
+		txtArea.addKeyListener(new KeyAdapter() {
+			
 			@Override
 			public void keyReleased(KeyEvent e) {
-				textArea_1.setText(textArea.getText());
-				String t=textArea.getText();
+				txtTra.setText(txtArea.getText());
+				String t=txtArea.getText();
 				t=t.replace("a","afa");
 				t=t.replace("e","efe");
 				t=t.replace("i","ifi");
@@ -74,14 +70,14 @@ public class f {
 				t=t.replace("I","IFI");
 				t=t.replace("O","OFO");
 				t=t.replace("U","UfU");
-				textArea_1.setText(t);
+				txtTra.setText(t);
 			}
 		});
-		textArea.setBounds(98, 45, 420, 151);
-		frmIdiomaF.getContentPane().add(textArea);
+		txtArea.setBounds(98, 45, 420, 151);
+		frmIdiomaF.getContentPane().add(txtArea);
 		
-		textArea_1 = new JTextArea();
-		textArea_1.addKeyListener(new KeyAdapter() {
+		txtTra = new JTextArea();
+		txtTra.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent e) {
 							}
@@ -89,7 +85,7 @@ public class f {
 			public void keyReleased(KeyEvent e) {
 			}
 		});
-		textArea_1.setBounds(98, 226, 420, 151);
-		frmIdiomaF.getContentPane().add(textArea_1);
+		txtTra.setBounds(98, 226, 420, 151);
+		frmIdiomaF.getContentPane().add(txtTra);
 	}
 }

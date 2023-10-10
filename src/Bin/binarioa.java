@@ -15,18 +15,18 @@ public class binarioa {
 
 	private JFrame frmBinario;
 	private JLabel lblDec;
-	private JToggleButton tglbtnNewToggleButton_11;
-	private JToggleButton tglbtnNewToggleButton_10;
-	private JToggleButton tglbtnNewToggleButton_9;
-	private JToggleButton tglbtnNewToggleButton_8;
-	private JToggleButton tglbtnNewToggleButton_7;
-	private JToggleButton tglbtnNewToggleButton;
-	private JToggleButton tglbtnNewToggleButton_1;
-	private JToggleButton tglbtnNewToggleButton_2;
-	private JToggleButton tglbtnNewToggleButton_3;
-	private JToggleButton tglbtnNewToggleButton_4;
-	private JToggleButton tglbtnNewToggleButton_5;
-	private JToggleButton tglbtnNewToggleButton_6;
+	private JToggleButton btnA;
+	private JToggleButton btnB;
+	private JToggleButton btnC;
+	private JToggleButton btnD;
+	private JToggleButton btnE;
+	private JToggleButton btnL;
+	private JToggleButton btnK;
+	private JToggleButton btnJ;
+	private JToggleButton btnI;
+	private JToggleButton btnH;
+	private JToggleButton btnG;
+	private JToggleButton btnF;
 	int d = 0;
 
 	/**
@@ -64,246 +64,246 @@ public class binarioa {
 		frmBinario.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBinario.getContentPane().setLayout(null);
 
-		tglbtnNewToggleButton = new JToggleButton("0");
-		tglbtnNewToggleButton.addActionListener(new ActionListener() {
+		btnL = new JToggleButton("0");
+		btnL.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton.isSelected()) {
-					tglbtnNewToggleButton.setText("1");
+				if (btnL.isSelected()) {
+					btnL.setText("1");
 					d += 2048;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton.setText("0");
+					btnL.setText("0");
 					d -= 2048;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton.setBounds(10, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton);
+		btnL.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnL.setBounds(10, 40, 54, 38);
+		frmBinario.getContentPane().add(btnL);
 
-		tglbtnNewToggleButton_1 = new JToggleButton("0");
-		tglbtnNewToggleButton_1.addActionListener(new ActionListener() {
+		btnK = new JToggleButton("0");
+		btnK.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_1.isSelected()) {
-					tglbtnNewToggleButton_1.setText("1");
+				if (btnK.isSelected()) {
+					btnK.setText("1");
 					d += 1024;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_1.setText("0");
+					btnK.setText("0");
 					d -= 1024;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_1.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_1.setBounds(74, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_1);
+		btnK.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnK.setBounds(74, 40, 54, 38);
+		frmBinario.getContentPane().add(btnK);
 
-		tglbtnNewToggleButton_2 = new JToggleButton("0");
-		tglbtnNewToggleButton_2.addActionListener(new ActionListener() {
+		btnJ = new JToggleButton("0");
+		btnJ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_2.isSelected()) {
-					tglbtnNewToggleButton_2.setText("1");
+				if (btnJ.isSelected()) {
+					btnJ.setText("1");
 					d += 512;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_2.setText("0");
+					btnJ.setText("0");
 					d -= 512;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_2.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_2.setBounds(144, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_2);
+		btnJ.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnJ.setBounds(144, 40, 54, 38);
+		frmBinario.getContentPane().add(btnJ);
 
-		tglbtnNewToggleButton_3 = new JToggleButton("0");
-		tglbtnNewToggleButton_3.addActionListener(new ActionListener() {
+		btnI = new JToggleButton("0");
+		btnI.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_3.isSelected()) {
-					tglbtnNewToggleButton_3.setText("1");
+				if (btnI.isSelected()) {
+					btnI.setText("1");
 					d += 256;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_3.setText("0");
+					btnI.setText("0");
 					d -= 256;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_3.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_3.setBounds(208, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_3);
+		btnI.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnI.setBounds(208, 40, 54, 38);
+		frmBinario.getContentPane().add(btnI);
 
-		tglbtnNewToggleButton_4 = new JToggleButton("0");
-		tglbtnNewToggleButton_4.addActionListener(new ActionListener() {
+		btnH = new JToggleButton("0");
+		btnH.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_4.isSelected()) {
-					tglbtnNewToggleButton_4.setText("1");
+				if (btnH.isSelected()) {
+					btnH.setText("1");
 					d += 128;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_4.setText("0");
+					btnH.setText("0");
 					d -= 128;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_4.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_4.setBounds(273, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_4);
+		btnH.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnH.setBounds(273, 40, 54, 38);
+		frmBinario.getContentPane().add(btnH);
 
-		tglbtnNewToggleButton_5 = new JToggleButton("0");
-		tglbtnNewToggleButton_5.addActionListener(new ActionListener() {
+		btnG = new JToggleButton("0");
+		btnG.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_5.isSelected()) {
-					tglbtnNewToggleButton_5.setText("1");
+				if (btnG.isSelected()) {
+					btnG.setText("1");
 					d += 64;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_5.setText("0");
+					btnG.setText("0");
 					d -= 64;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_5.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_5.setBounds(337, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_5);
+		btnG.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnG.setBounds(337, 40, 54, 38);
+		frmBinario.getContentPane().add(btnG);
 
-		tglbtnNewToggleButton_6 = new JToggleButton("0");
-		tglbtnNewToggleButton_6.addActionListener(new ActionListener() {
+		btnF = new JToggleButton("0");
+		btnF.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_6.isSelected()) {
-					tglbtnNewToggleButton_6.setText("1");
+				if (btnF.isSelected()) {
+					btnF.setText("1");
 					d += 32;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_6.setText("0");
+					btnF.setText("0");
 					d -= 32;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_6.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_6.setBounds(402, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_6);
+		btnF.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnF.setBounds(402, 40, 54, 38);
+		frmBinario.getContentPane().add(btnF);
 
-		tglbtnNewToggleButton_7 = new JToggleButton("0");
-		tglbtnNewToggleButton_7.addActionListener(new ActionListener() {
+		btnE = new JToggleButton("0");
+		btnE.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_7.isSelected()) {
-					tglbtnNewToggleButton_7.setText("1");
+				if (btnE.isSelected()) {
+					btnE.setText("1");
 					d += 16;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_7.setText("0");
+					btnE.setText("0");
 					d -= 16;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_7.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_7.setBounds(470, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_7);
+		btnE.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnE.setBounds(470, 40, 54, 38);
+		frmBinario.getContentPane().add(btnE);
 
-		tglbtnNewToggleButton_8 = new JToggleButton("0");
-		tglbtnNewToggleButton_8.addActionListener(new ActionListener() {
+		btnD = new JToggleButton("0");
+		btnD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_8.isSelected()) {
-					tglbtnNewToggleButton_8.setText("1");
+				if (btnD.isSelected()) {
+					btnD.setText("1");
 					d += 8;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_8.setText("0");
+					btnD.setText("0");
 					d -= 8;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_8.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_8.setBounds(534, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_8);
+		btnD.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnD.setBounds(534, 40, 54, 38);
+		frmBinario.getContentPane().add(btnD);
 
-		tglbtnNewToggleButton_9 = new JToggleButton("0");
-		tglbtnNewToggleButton_9.addActionListener(new ActionListener() {
+		btnC = new JToggleButton("0");
+		btnC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_9.isSelected()) {
-					tglbtnNewToggleButton_9.setText("1");
+				if (btnC.isSelected()) {
+					btnC.setText("1");
 					d += 4;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_9.setText("0");
+					btnC.setText("0");
 					d -= 4;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_9.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_9.setBounds(603, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_9);
+		btnC.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnC.setBounds(603, 40, 54, 38);
+		frmBinario.getContentPane().add(btnC);
 
-		tglbtnNewToggleButton_10 = new JToggleButton("0");
-		tglbtnNewToggleButton_10.addActionListener(new ActionListener() {
+		btnB = new JToggleButton("0");
+		btnB.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_10.isSelected()) {
-					tglbtnNewToggleButton_10.setText("1");
+				if (btnB.isSelected()) {
+					btnB.setText("1");
 					d += 2;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_10.setText("0");
+					btnB.setText("0");
 					d -= 2;
 					lblDec.setText("" + d);
 				}
 			}
 		});
-		tglbtnNewToggleButton_10.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_10.setBounds(667, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_10);
+		btnB.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnB.setBounds(667, 40, 54, 38);
+		frmBinario.getContentPane().add(btnB);
 
-		tglbtnNewToggleButton_11 = new JToggleButton("0");
-		tglbtnNewToggleButton_11.addActionListener(new ActionListener() {
+		btnA = new JToggleButton("0");
+		btnA.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (tglbtnNewToggleButton_11.isSelected()) {
-					tglbtnNewToggleButton_11.setText("1");
+				if (btnA.isSelected()) {
+					btnA.setText("1");
 					d += 1;
 					lblDec.setText("" + d);
 
 				} else {
 
-					tglbtnNewToggleButton_11.setText("0");
+					btnA.setText("0");
 					d -= 1;
 					lblDec.setText("" + d);
 				}
 			}
 
 		});
-		tglbtnNewToggleButton_11.setFont(new Font("Tahoma", Font.BOLD, 18));
-		tglbtnNewToggleButton_11.setBounds(731, 40, 54, 38);
-		frmBinario.getContentPane().add(tglbtnNewToggleButton_11);
+		btnA.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnA.setBounds(731, 40, 54, 38);
+		frmBinario.getContentPane().add(btnA);
 
 		JLabel lblNewLabel = new JLabel("Decimal");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 68));

@@ -46,9 +46,6 @@ public class name {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public name() {
 		initialize();
 		CambiarColor();
@@ -64,10 +61,6 @@ public class name {
 		lblN2.setText(" " + cantidad1);
 		lblN3.setText(" " + cantidad2);
 	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frmColresCombinados = new JFrame();
 		frmColresCombinados.setIconImage(Toolkit.getDefaultToolkit().getImage(name.class.getResource("/P2/oky.jpg")));
